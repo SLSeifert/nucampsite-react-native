@@ -135,6 +135,15 @@ const Main = () => {
           options={{
             title: "Home",
             headerShown: false,
+            drawerIcon: ({ color }) => (
+              <Icon
+                name="home"
+                type="font-awesome"
+                size={24}
+                iconStyle={{ width: 24 }}
+                color={color}
+              />
+            ),
           }}
         />
         <Drawer.Screen
@@ -143,6 +152,15 @@ const Main = () => {
           options={{
             title: "Campsite Directory",
             headerShown: false,
+            drawerIcon: ({ color }) => (
+              <Icon
+                name="list"
+                type="font-awesome"
+                size={24}
+                iconStyle={{ width: 24 }}
+                color={color}
+              />
+            ),
           }}
         />
         <Drawer.Screen
@@ -151,6 +169,15 @@ const Main = () => {
           options={{
             title: "About Us",
             headerShown: false,
+            drawerIcon: ({ color }) => (
+              <Icon
+                name="info-circle"
+                type="font-awesome"
+                size={24}
+                iconStyle={{ width: 24 }}
+                color={color}
+              />
+            ),
           }}
         />
         <Drawer.Screen
@@ -159,6 +186,15 @@ const Main = () => {
           options={{
             title: "Contact Us",
             headerShown: false,
+            drawerIcon: ({ color }) => (
+              <Icon
+                name="address-card"
+                type="font-awesome"
+                size={24}
+                iconStyle={{ width: 24 }}
+                color={color}
+              />
+            ),
           }}
         />
       </Drawer.Navigator>
