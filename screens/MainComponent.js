@@ -223,6 +223,22 @@ const Main = () => {
           }}
         />
         <Drawer.Screen
+          name="ReserveCampsite"
+          component={ReservationNavigator}
+          options={{
+            title: "Reserve Campsite",
+            drawerIcon: ({ color }) => (
+              <Icon
+                name="tree"
+                type="font-awesome"
+                size={24}
+                iconStyle={{ width: 24 }}
+                color={color}
+              />
+            ),
+          }}
+        />
+        <Drawer.Screen
           name="AboutNav"
           component={AboutNavigator}
           options={{
@@ -248,22 +264,6 @@ const Main = () => {
             drawerIcon: ({ color }) => (
               <Icon
                 name="address-card"
-                type="font-awesome"
-                size={24}
-                iconStyle={{ width: 24 }}
-                color={color}
-              />
-            ),
-          }}
-        />
-        <Drawer.Screen
-          name="ReserveCampsite"
-          component={ReservationNavigator}
-          options={{
-            title: "Reserve Campsite",
-            drawerIcon: ({ color }) => (
-              <Icon
-                name="tree"
                 type="font-awesome"
                 size={24}
                 iconStyle={{ width: 24 }}
