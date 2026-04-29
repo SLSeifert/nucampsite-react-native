@@ -8,6 +8,7 @@ import { Modal, Button } from "react-native";
 import { Rating, Input } from "react-native-elements";
 import { color } from "react-native-elements/dist/helpers";
 import { postComment } from "../features/comments/commentsSlice";
+import * as Animatable from "react-native-animatable";
 
 const CampsiteInfoScreen = ({ route }) => {
   const { campsite } = route.params;
@@ -58,7 +59,7 @@ const CampsiteInfoScreen = ({ route }) => {
   };
 
   return (
-    <>
+    <Animatable.View animation="fadeInUp" duration={2000} delay={1000}>
       <FlatList
         data={comments.commentsArray.filter((comment) => comment.campsiteId)}
         renderItem={renderCommentItem}
@@ -131,7 +132,7 @@ const CampsiteInfoScreen = ({ route }) => {
           </View>
         </View>
       </Modal>
-    </>
+    </Animatable.View>
   );
 };
 
