@@ -32,6 +32,17 @@ const ReservationScreen = () => {
     Alert.alert(
       "Begin Search?",
       `Number of Campers: ${campers}\n\nHike-In? ${hikeIn}\n\nDate: ${date}`,
+      [
+        {
+          text: "Cancel",
+          style: "cancel",
+        },
+        {
+          text: "OK",
+          onPress: () => resetForm(),
+        },
+      ],
+      { cancelable: false },
     );
   };
 
